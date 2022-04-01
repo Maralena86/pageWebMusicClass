@@ -1,0 +1,114 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*------------------------header----------------------------------*/
+header{
+    background-color:#ed9330;
+    color: white;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    margin:0px;
+}
+li{
+    padding:20px 60px;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: white ;
+}
+li:hover{
+    opacity: 0.7;
+    background-color: black;
+    
+}
+/*------------------------main----------------------------------*/
+main{
+    background-image: url("./images/child.jpeg");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    background-position: bottom;   
+}
+
+h2{
+    color:white ;
+    font-size: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#text1{
+    color:#4b919d ;
+    font-size: 20px;
+}
+#logo{
+    width: 130px;
+    height: 80px;
+    opacity: 0.7;
+
+}
+.zikhouse{
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.cours{
+    color: black;
+}
+div{
+    text-align: center;
+}
+/*------------------------footer----------------------------------*/
+footer{
+    background-color:#4b919d;
+    height: 140px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    color: white;
+}
+h3{
+    color: #bbc3cc;
+}
+
+.centerFlex{
+    align-self: center;
+}
+@media(max-width:800px){
+    main{
+        background-position: right;
+        background-size: cover;
+        background-position: 35% 75%;
+        height: 500px;
+    }
+
+   .zikhouse{
+    text-align: right;
+    margin-right: 10px;
+   }
+    h2{
+        font-size: 25px;
+        margin: 0px;
+    }
+    #text1{
+        font-size: 15px;
+        margin-top:0px;
+    }
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+    footer{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+}

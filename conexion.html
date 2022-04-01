@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="conexion.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./infos.html">Classes</a></li>               
+                    <li><a href="./articles.html">Articles</a></li>
+                    <li><a href="./conexion.html">Se connecter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+            <div id="connexion">
+                <div id="container">
+                <h1>Connexion</h1>
+                <label for="pseudo">Votre pseudo: </label><br><input type="text" name="pseudo" id="pseudo" placeholder="Ex: mari8626" size="30" maxlength="8" autofocus required /><br><br>
+                <label for="pass">Votre mot de passe: </label><br>
+                <input type="password" name="pass" id="pass" maxlength="8" placeholder="8 charactères"/><br>
+                <input id="btnVert" type="submit" value="ENVOYER">
+                </div>
+                <div>
+                    <p class="slogan">Contacte nous, on trouvera le meilleure<br>prof pour toi.... </p><br>
+                    <p class="slogan">ZIKHOUSE</p>
+                    <p class="slogan" id="petitSlog">Ecole de musique où excelle et plaisir<br> sont réunis</p>
+                </div>
+            </div>
+            <div id="inscription">
+            <h2>Formulaire d'inscription:</h2>
+            <form method="post" action="traitement.php">   
+                    <div>
+                        <label for="prenom">Quel est ton prénom: </label><br>
+                        <input class="textInside"type="text" name="prénom" id="prénom" required />
+                    </div>
+                    <div>
+                        <label  for="nom">Quel est ton nom: </label><br>
+                        <input class="textInside"type="text" name="nom" id="nom" required />
+                    </div>
+        
+        
+                    <div>
+                        <label for= "email">Votre mail: </label><br>
+                        <input  class="textInside" type="email" name="email" required />
+                    </div>
+                    <div>
+                        <h2>
+                            Quel(s) instrument(s) aimerais tu jouer? 
+                        </h2>
+                        <div id="choix instrument">
+                        
+                            <input type="checkbox" name="violin" id="violin"/><label for="violin">Violon</label><br/>
+                            <input type="checkbox" name="piano" id="piano"  /><label for="piano">Piano</label></br>
+                            <input type="checkbox" name="guitar" id="guitar" /><label for="guitar">Guitare</label><br>
+                            <input type="checkbox" name="cello" id="cello"/><label for="chant">Chanter</label><br>
+                            <input type="checkbox" name="saxo" id="autre"/><label for="autre">Autre</label>
+                        </div>
+                        
+                    </div>
+                    <h2>Pour plus d'information, écris nous: </h2>
+			        <textarea name="commentaires" id="commentaires" rows="10" cols="60"></textarea><br>
+                    <input id="envoyer" type="submit" value="ENVOYER">
+                </form>
+            </div>
+            
+        </main>
+        <footer>
+            <div class="endFlex">
+                <h3>Par téléphone</h3>
+                <p class="text2">07.69.19.09.48</p>
+            </div>
+            <div class="centerFlex">
+                <h3>Besoin d'aide</h3>
+                <p class="text2">Vous pouvez nous contacter</p>
+            </div>
+            <div>
+                <h3 class="endFlex">Par Email</h3>
+                <p class="text2">Floua.infos@gmail.com</p>
+            </div>
+          
+        </footer>
+    </div>
+    
+</body>
+</html>

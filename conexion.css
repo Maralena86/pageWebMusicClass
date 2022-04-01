@@ -1,0 +1,153 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+/*------------------------header----------------------------------*/
+header{
+    background-color:#ed9330;
+    color: white;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    margin:0px;
+}
+li{
+    padding:20px 60px;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: white ;
+}
+li:hover{
+    opacity: 0.7;
+    background-color: black;
+    
+}
+/*------------------------main----------------------------------*/
+
+main{
+    text-align: center;
+    font-family: fantasy;
+}
+#connexion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background-image: url("./images/music.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+#connexion h1{
+    color:#c2b8af;
+    background-color: #1d282a;
+    text-shadow: 2px 2px 2px rgb(58, 53, 53);
+    padding: 20px 100px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+}
+#connexion input{
+    padding: 10px;
+}
+#btnVert{
+    background: linear-gradient(#36230f,     #ed9330
+    ); 
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+#container{
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    background-color: rgba(218, 218, 218, 0.4);
+}
+.slogan{
+    font-size: 40px;
+    color: white;
+    text-align: right;
+}
+#petitSlog{
+    font-size: 20px;
+}
+
+div{
+    text-align: center;
+}
+h1{
+    color: white
+}
+h2{
+    color: #4b919d;
+    ;
+}
+#inscription{
+
+    background-color: #fffaf3;
+    padding: 50px; 
+
+}
+input{
+    border-radius: 8px;
+}
+textarea{
+    background-color: rgba(246, 243, 239, 0.6);
+    border-radius: 10px;
+}
+.textInside
+{
+    padding: 10px;
+    ;
+}
+#envoyer{
+    background-color:rgba( 237, 147, 48, 0.8);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: rgb(255, 251, 251);
+    font-size: 20px;
+    margin: 20px;
+}
+
+/*------------------------footer----------------------------------*/
+footer{
+    background-color:#4b919d;
+    height: 140px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    color: white;
+}
+h3{
+    color: #bbc3cc;
+}
+
+.centerFlex{
+    align-self: center;
+}
+@media(max-width:900px){
+#connexion{
+    flex-direction: column;
+}
+
+.slogan{
+    display: none;
+}
+textarea{
+    width: 300px;
+}
+footer{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+}

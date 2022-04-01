@@ -1,0 +1,217 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    background-color: #fffaf3;
+}
+/*------------------------header----------------------------------*/
+
+header{
+    background-color: #ed9330;
+    color: white;    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    margin:0px;
+}
+li{
+    padding:20px 60px;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: white ;
+}
+li:hover{
+    opacity: 0.7;
+    background-color: black;   
+}
+
+/*------------------------main----------------------------------*/
+main{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;   
+    font-family: sans-serif;
+    padding-bottom: 70px;
+    justify-content: center;
+}
+
+.titleOffre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 0px;
+    
+}
+/*logo*/
+#logo{
+    width: 80px;
+    
+    opacity: 0.7;
+
+}
+#logoText{
+    font-size: 10px;
+    margin: 0px;
+
+}
+.zikhouse{   
+    margin-top: 10px;
+}
+/*finLogo*/
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: #33656d;
+     
+}
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0px ;
+    padding-left: 20px;   
+}
+/*cours presentation*/
+#coursDiv{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+     
+}
+.infoCours{  
+    display:flex;   
+    justify-content: space-around;
+    flex-wrap: wrap;     
+}
+.cours{
+    box-shadow: 3px 3px 3px gray;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.cours:hover{
+    opacity: 0.5;
+    
+}
+.infoCours p{
+    color: #ed9330;
+    padding-left: 10px;
+    
+}
+.cours img{
+    height: 300px;
+    width: 300px;
+}
+/*Offert*/
+.backgrounImage{
+    background-image: url("./images/music3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+#promo{
+    background-color: rgba(0,0,0,0.4);
+    color:white;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;  
+}
+#promo h3{
+    border-bottom: 1px solid coral;
+    width: 400px;
+    padding-bottom: 10px;
+    
+    
+}
+#codePromo{
+    background-color: white;
+    padding: 10px 20px;
+    width: 310px;
+    border-radius: 10px;
+    color: black;
+}
+#codePromo:hover{
+    background-color: #ed9330;
+    transition-duration: 2s;
+    cursor: pointer;
+}
+/*teachers*/
+#teachers{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 5px 5px black;
+    border: 1px solid black;
+    padding: 40px;
+    margin-bottom: 70px;
+
+
+}
+.teacher img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center;
+}
+.teacher p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/*------------------------footer----------------------------------*/
+
+footer{
+    background-color:#4b919d;
+    height: 140px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+h3{
+    color: #bbc3cc;
+}
+
+.centerFlex{
+    align-self: center;
+}
+@media(max-width:900px) {
+    #teachers img{
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    #teachers p{
+        font-size: 12px;
+    }
+    
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        align-items: center;        
+    }
+    #promo{
+        font-size: 20px;
+        height: auto;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
